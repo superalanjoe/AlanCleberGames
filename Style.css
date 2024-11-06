@@ -1,0 +1,170 @@
+/* CSS */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* CSS para imagens responsivas */
+.logo-responsiva {
+    width: 100%; /* Ocupa a largura completa do contêiner */
+    height: auto; /* Ajusta a altura automaticamente */
+    max-width: 1000px; /* Largura máxima em telas grandes */
+    margin: 0 auto; /* Centraliza a imagem em telas maiores */
+}
+
+@media (max-width: 768px) {
+    .logo-responsiva {
+        max-width: 600px; /* Define largura menor para tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-responsiva {
+        max-width: 300px; /* Define largura menor para celulares */
+    }
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+}
+
+header p {
+    color: #ccc;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Navegação */
+nav {
+    background-color: #555;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Estilos da seção de ofertas */
+.ofertas {
+    max-width: 800px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza a div de ofertas */
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Fundo claro para destacar */
+    border-radius: 8px; /* Arredonda os cantos */
+}
+
+.ofertas h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ofertas p {
+    color: #666;
+    font-size: 1em;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.ofertas ol {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.ofertas a {
+    color: #0073e6;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.ofertas a:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header, footer, .ofertas {
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .ofertas p {
+        font-size: 0.9em;
+    }
+
+    .logo {
+        width: 120px; /* Ajusta o tamanho da logo para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    nav a {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    .ofertas p {
+        font-size: 0.8em;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
